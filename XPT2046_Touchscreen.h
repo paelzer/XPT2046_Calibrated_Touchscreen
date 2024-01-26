@@ -63,7 +63,8 @@ public:
 	bool begin(FlexIOSPI &wflexspi);
 #endif
 
-	TS_Point getPoint(bool doUpdateFirst = true);
+	//TS_Point getPoint(bool doUpdateFirst = true); // this didn't compile on my computer like this
+	TS_Point getPoint(bool doUpdateFirst); // so I changed it
 	bool tirqTouched();
 	bool touched();
 	void readData(int16_t *x, int16_t *y, int16_t *z);
